@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jc5-NA-dJD" customClass="SleepCustomView" customModule="Orb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SleepBg" translatesAutoresizingMaskIntoConstraints="NO" id="lMF-nw-mS7">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleep.gif" translatesAutoresizingMaskIntoConstraints="NO" id="l0d-xg-xeA">
+                    <rect key="frame" x="287" y="84" width="450" height="450"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="GLs-SG-xWc"/>
+                        <constraint firstAttribute="width" constant="450" id="YVp-0r-j6b"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-Hk-z4g">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="btnCloseClicked:" destination="jc5-NA-dJD" eventType="touchUpInside" id="7nc-Un-BSh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lMF-nw-mS7" firstAttribute="bottom" secondItem="56d-ym-Wup" secondAttribute="bottom" id="4Rk-uM-pIN"/>
+                <constraint firstItem="ucU-Hk-z4g" firstAttribute="top" secondItem="jc5-NA-dJD" secondAttribute="top" id="6DD-oO-jBc"/>
+                <constraint firstItem="lMF-nw-mS7" firstAttribute="top" secondItem="jc5-NA-dJD" secondAttribute="top" id="7WJ-CP-rQh"/>
+                <constraint firstItem="ucU-Hk-z4g" firstAttribute="leading" secondItem="56d-ym-Wup" secondAttribute="leading" id="ElQ-1s-fgW"/>
+                <constraint firstItem="56d-ym-Wup" firstAttribute="bottom" secondItem="ucU-Hk-z4g" secondAttribute="bottom" id="aiW-e9-dCJ"/>
+                <constraint firstItem="56d-ym-Wup" firstAttribute="trailing" secondItem="ucU-Hk-z4g" secondAttribute="trailing" id="ggn-FA-Him"/>
+                <constraint firstItem="l0d-xg-xeA" firstAttribute="centerX" secondItem="jc5-NA-dJD" secondAttribute="centerX" id="k5s-QX-ISW"/>
+                <constraint firstItem="l0d-xg-xeA" firstAttribute="top" secondItem="56d-ym-Wup" secondAttribute="top" constant="64" id="q1k-Bq-OoS"/>
+                <constraint firstItem="lMF-nw-mS7" firstAttribute="leading" secondItem="56d-ym-Wup" secondAttribute="leading" id="sD1-fv-p8S"/>
+                <constraint firstItem="lMF-nw-mS7" firstAttribute="trailing" secondItem="56d-ym-Wup" secondAttribute="trailing" id="w4v-f6-xvG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="56d-ym-Wup"/>
+            <connections>
+                <outlet property="btnClose" destination="ucU-Hk-z4g" id="YbV-xl-JIf"/>
+                <outlet property="imgGif" destination="l0d-xg-xeA" id="dlA-ad-M1D"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SleepBg" width="1920" height="1200"/>
+        <image name="sleep.gif" width="700" height="700"/>
+    </resources>
+</document>

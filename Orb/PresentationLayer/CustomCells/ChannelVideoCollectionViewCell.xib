@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChannelVideoCollectionViewCell" id="vDE-XV-TIh" customClass="ChannelVideoCollectionViewCell" customModule="Orb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OG3-cw-tlg">
+                        <rect key="frame" x="5" y="205" width="240" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="bvX-af-ZnN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yve-Vq-dVK">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BH0-hL-C45">
+                        <rect key="frame" x="10" y="10" width="50" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Txn-Ui-qCQ"/>
+                            <constraint firstAttribute="width" constant="50" id="c0Q-7G-y4u"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88:88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cry-5E-oI5">
+                        <rect key="frame" x="195" y="170" width="50" height="20"/>
+                        <color key="backgroundColor" red="0.14509981869999999" green="0.14509573579999999" blue="0.14509657030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="BTJ-dF-K7p"/>
+                            <constraint firstAttribute="width" constant="50" id="I2V-Ty-8Sm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.14509981869999999" green="0.14509573579999999" blue="0.14509657030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OG3-cw-tlg" secondAttribute="bottom" id="5BZ-s9-g67"/>
+                <constraint firstAttribute="trailing" secondItem="cry-5E-oI5" secondAttribute="trailing" constant="5" id="6HM-5G-aQH"/>
+                <constraint firstItem="yve-Vq-dVK" firstAttribute="leading" secondItem="vDE-XV-TIh" secondAttribute="leading" id="95d-MP-HCF"/>
+                <constraint firstItem="OG3-cw-tlg" firstAttribute="top" secondItem="yve-Vq-dVK" secondAttribute="bottom" constant="5" id="9zg-7L-tDW"/>
+                <constraint firstItem="OG3-cw-tlg" firstAttribute="leading" secondItem="vDE-XV-TIh" secondAttribute="leading" constant="5" id="MIV-x7-aPX"/>
+                <constraint firstItem="OG3-cw-tlg" firstAttribute="top" secondItem="cry-5E-oI5" secondAttribute="bottom" constant="15" id="QSh-ud-B8L"/>
+                <constraint firstAttribute="trailing" secondItem="yve-Vq-dVK" secondAttribute="trailing" id="TUb-L8-GjW"/>
+                <constraint firstItem="BH0-hL-C45" firstAttribute="top" secondItem="vDE-XV-TIh" secondAttribute="top" constant="10" id="Vm9-UA-vAe"/>
+                <constraint firstAttribute="trailing" secondItem="OG3-cw-tlg" secondAttribute="trailing" constant="5" id="bgU-b4-24E"/>
+                <constraint firstItem="BH0-hL-C45" firstAttribute="leading" secondItem="vDE-XV-TIh" secondAttribute="leading" constant="10" id="jxL-E0-Qf6"/>
+                <constraint firstItem="yve-Vq-dVK" firstAttribute="top" secondItem="vDE-XV-TIh" secondAttribute="top" id="mdo-FB-m7u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="P6x-Nt-vKi"/>
+            <connections>
+                <outlet property="imgContent" destination="yve-Vq-dVK" id="tRh-sc-V1O"/>
+                <outlet property="imgTag" destination="BH0-hL-C45" id="M0y-7k-nSw"/>
+                <outlet property="lblDuration" destination="cry-5E-oI5" id="Tbm-A9-CXw"/>
+                <outlet property="lblVideoName" destination="OG3-cw-tlg" id="X15-RR-HIC"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="24"/>
+        </collectionViewCell>
+    </objects>
+</document>

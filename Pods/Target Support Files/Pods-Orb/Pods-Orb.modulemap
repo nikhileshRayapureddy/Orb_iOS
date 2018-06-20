@@ -1,0 +1,6 @@
+framework module Pods_Orb {
+  umbrella header "Pods-Orb-umbrella.h"
+
+  export *
+  module * { export * }
+}

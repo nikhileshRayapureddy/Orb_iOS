@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Banner" representedClassName="Banner" syncable="YES">
+        <attribute name="adFileType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bannerimage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="button_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fileKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="shareLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploaded_by" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipcodes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Content" representedClassName="Content" syncable="YES">
+        <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fileKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTrending" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="provided_by" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploaded_by" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Banner" positionX="-45" positionY="90" width="128" height="240"/>
+        <element name="Content" positionX="-45" positionY="0" width="128" height="225"/>
+    </elements>
+</model>

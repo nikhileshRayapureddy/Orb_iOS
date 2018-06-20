@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ChannelCollectionViewCell" id="rEE-Wn-gS1" customClass="ChannelCollectionViewCell" customModule="Orb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chnl_comedy" translatesAutoresizingMaskIntoConstraints="NO" id="Zb9-Xk-tZC">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="Uo1-iM-0Bx"/>
+                            <constraint firstAttribute="height" constant="250" id="jnD-cg-37E"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weN-Fe-h8c">
+                        <rect key="frame" x="0.0" y="250" width="250" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.14509981869999999" green="0.14509573579999999" blue="0.14509657030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="weN-Fe-h8c" secondAttribute="bottom" id="4up-gX-D3l"/>
+                <constraint firstItem="weN-Fe-h8c" firstAttribute="leading" secondItem="rEE-Wn-gS1" secondAttribute="leading" id="E4L-8q-4LD"/>
+                <constraint firstItem="weN-Fe-h8c" firstAttribute="top" secondItem="Zb9-Xk-tZC" secondAttribute="bottom" id="Fng-pu-T6p"/>
+                <constraint firstAttribute="trailing" secondItem="weN-Fe-h8c" secondAttribute="trailing" id="Gop-ap-COZ"/>
+                <constraint firstItem="Zb9-Xk-tZC" firstAttribute="top" secondItem="rEE-Wn-gS1" secondAttribute="top" id="noD-4Y-Too"/>
+                <constraint firstItem="Zb9-Xk-tZC" firstAttribute="centerX" secondItem="rEE-Wn-gS1" secondAttribute="centerX" id="p6V-Rx-KAt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="pOn-Bq-AWa"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgCat" destination="Zb9-Xk-tZC" id="Rf2-F6-Cnv"/>
+                <outlet property="lblCat" destination="weN-Fe-h8c" id="UGd-rz-5ul"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chnl_comedy" width="370" height="280"/>
+    </resources>
+</document>
