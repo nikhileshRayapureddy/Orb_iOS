@@ -73,10 +73,11 @@ class ViewController: BaseViewController {
     var imgAdBanner : UIImageView!
     var imgAdPlainBanner : UIImageView!
     var adBannerTimer : Timer!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Keychain.removeUDID(service: "Orb", account: "OrbAccount")
+//        Keychain.removeUDID(service: "Orb", account: "OrbAccount")
         if let str = Keychain.loadUDID(service: "Orb", account: "OrbAccount")
         {
             UDID = str
@@ -787,7 +788,7 @@ class ViewController: BaseViewController {
             self.imgAdPlainBanner.isHidden = true
         }
 
-//        self.showAdBanner()
+        self.showAdBanner()
         
     }
     @objc func updateTime(timer:Timer)
